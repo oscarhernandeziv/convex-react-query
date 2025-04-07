@@ -3,13 +3,13 @@
 This is a starter kit providing basic building blocks for quickstart projects to try out other tools.
 
 - **Next.js 15 / React 19 / Tailwind v4**
-- **shadcn/ui:** Complete with:
+- **shadcn/ui** for styling, complete with:
    - All components and utils located in `app/_components/`
    - `<ThemeProvider />` and `<ThemeToggle />` components for light/dark mode
    - All radiuses and box-shadows set to 0.
-- **Biome:** Complete with:
+- **Biome** for formatting and linting, complete with:
    - Built out `biome.json` and `.vscode/settings.json` configs
-- **Bun:** 
+- **Bun** for a package manager
 
 ### Installation
 
@@ -22,16 +22,6 @@ This is a starter kit providing basic building blocks for quickstart projects to
     ```bash
     bun install
     ```
-
-### Running the Development Server
-
-Start the development server (with Turbopack):
-
-```bash
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Available Scripts
 
@@ -66,15 +56,3 @@ In the project directory, you can run the following scripts using Bun:
 ├── tailwind.config.ts    # Tailwind CSS configuration
 └── tsconfig.json         # TypeScript configuration
 ```
-
-## Learn More
-
-To learn more about the technologies used, take a look at the following resources:
-
--   [Next.js Documentation](https://nextjs.org/docs)
--   [React Documentation](https://react.dev/)
--   [Tailwind CSS Documentation](https://tailwindcss.com/docs)
--   [shadcn/ui Documentation](https://ui.shadcn.com/docs)
--   [Biome Documentation](https://biomejs.dev/docs/)
--   [TypeScript Documentation](https://www.typescriptlang.org/docs/)
--   [Bun Documentation](https://bun.sh/docs)
