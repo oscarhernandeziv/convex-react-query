@@ -1,16 +1,13 @@
 "use client";
 
+import { env } from "@/env";
 import { ConvexProvider, ConvexReactClient } from "convex/react";
-import type { ReactNode } from "react"; // Import ReactNode
+import type { ReactNode } from "react";
 
-// biome-ignore lint/nursery/noProcessEnv: <explanation>
-const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+const convexUrl = env.NEXT_PUBLIC_CONVEX_URL;
 
 if (!convexUrl) {
-	throw new Error(
-		"Missing NEXT_PUBLIC_CONVEX_URL environment variable. \n" +
-			"Add it to your .env.local file, or list it in the Vercel environment variables settings.",
-	);
+	throw new Error("Missing NEXT_PUBLIC_CONVEX_URL environment variable.");
 }
 
 // Export the convex client for use in other files

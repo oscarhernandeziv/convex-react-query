@@ -1,9 +1,13 @@
+import { convex } from "@/app/providers/convex-client-provider";
+import { ConvexQueryClient } from "@convex-dev/react-query";
 import {
 	QueryClient,
 	defaultShouldDehydrateQuery,
 	isServer,
 } from "@tanstack/react-query";
-import { convexQueryClient } from "./convex-query-client";
+
+// Create a ConvexQueryClient instance to connect Convex to TanStack Query
+const convexQueryClient = new ConvexQueryClient(convex);
 
 function makeQueryClient() {
 	const queryClient = new QueryClient({
