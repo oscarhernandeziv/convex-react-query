@@ -41,6 +41,6 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignore": ["env.ts"]
+		"ignore": ["env.ts", "convex/_generated"]
 	}
 }

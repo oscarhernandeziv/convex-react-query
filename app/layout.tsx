@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ConvexClientProvider } from "./providers/convex-client-provider";
+import { ReactQueryProvider } from "./providers/react-query-provider";
 import { ThemeProvider } from "./providers/theme-provider";
-
 const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
 	subsets: ["latin"],
@@ -35,7 +36,9 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					{children}
+					<ReactQueryProvider>
+						<ConvexClientProvider>{children}</ConvexClientProvider>
+					</ReactQueryProvider>
 				</ThemeProvider>
 			</body>
 		</html>
