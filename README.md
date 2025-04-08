@@ -71,5 +71,5 @@ Key patterns implemented:
 
 - `convex/schema.ts`: Database schema
 - `convex/tasks.ts`: Backend functions for task operations
-- `app/_components/todo-lß∑ist.tsx`: Main Todo component with integrated Convex and React Query
+- `app/_components/todo-list.tsx`: Main Todo component with integrated Convex and React Query
 - `app/page.tsx`: Page layout
